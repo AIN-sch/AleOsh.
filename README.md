@@ -27,3 +27,8 @@ for ip in tqdm(ip_list):
     except (ConnectionRefusedError, socket.timeout):
         print(f"IP: {ip}, Status: Error")  
         # 添加了IP和状态信息
+
+
+
+
+        https://[2409:8a4c:7e12:31f0:90d3:46e0:fae7:bc19]:2048
