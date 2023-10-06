@@ -13,7 +13,7 @@ sock.setsockopt(socket.IPPROTO_IP, socket.IP_MULTICAST_TTL, 2)
 # 构造多播数据包，例中指令为重启计算机
 message = b'\x01\x01' # 指令为重启计算机，具体含义可以自定义
 # 获取局域网内的计算机IP列表
-ip_list = ['192.168.10.{}'.format(i) for i in range(1, 256)]  # 修改了网段为192.168.10
+ip_list = ['192.168.---.{}'.format(i) for i in range(1, 256)]  # 修改网段
 # 发送多播数据包并显示进度条和IP信息
 for ip in tqdm(ip_list):
     try:
